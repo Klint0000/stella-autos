@@ -43,7 +43,7 @@ ul.nav-list {
     padding: 0;
     position: relative;
     left: 10%;
-    
+    color: black;
 }
 li {
     float: left;
