@@ -5,7 +5,7 @@
 body {
     width: 100vw;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgb(81, 67, 212),  rgb(175, 190, 175));
+    background-image: linear-gradient(to bottom,  rgb(175, 190, 175), white);
     background-repeat: no-repeat;
     overflow-x: hidden;
     font-family: "Encode Sans Semi Condensed", sans-serif;
@@ -21,7 +21,7 @@ div.container {
 div.nav {
     width: 80%;
     height: 40px;
-    background: linear-gradient(to bottom, rgb(81, 67, 212),  rgb(175, 190, 175));
+    background: linear-gradient(to bottom,  rgb(175, 190, 175), white);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
