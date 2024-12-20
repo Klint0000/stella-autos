@@ -5,7 +5,7 @@
 body {
     width: 100vw;
     height: 100%;
-    background-image: linear-gradient(to bottom, black, white);
+    background-image: linear-gradient(to bottom, rgb(81, 67, 212),  rgb(175, 190, 175));
     background-repeat: no-repeat;
     overflow-x: hidden;
     font-family: "Encode Sans Semi Condensed", sans-serif;
