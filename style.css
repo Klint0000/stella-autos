@@ -21,7 +21,7 @@ div.container {
 div.nav {
     width: 80%;
     height: 40px;
-    background: linear-gradient(to bottom,  rgb(175, 190, 175), white);
+    background: grey;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
