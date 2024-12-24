@@ -21,13 +21,12 @@ div.container {
 div.nav {
     width: 80%;
     height: 40px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
     margin: 10px auto;
     padding: 3px;
-    color: black;
 }
 div.image {
     margin: 10px 5px 20px 5px;
