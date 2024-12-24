@@ -21,10 +21,11 @@ div.container {
 div.nav {
     width: 80%;
     height: 40px;
-    position: sticky;
+    position: static;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
+    opacity: 1;
     margin: 10px auto 20px auto;
     padding: 3px;
     background: grey;
