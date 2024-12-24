@@ -342,6 +342,9 @@ h1.contact  {
     }
 }
 @media (min-width: 900px) {
+    .container {
+        margin-top: 0;
+    }
     div#contact {
         display: block;
         font-size: 20px;
