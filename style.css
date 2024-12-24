@@ -21,7 +21,6 @@ div.container {
 div.nav {
     width: 80%;
     height: 40px;
-    background: grey;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -49,6 +48,8 @@ ul.nav-list {
 li {
     float: left;
     margin: 3%;
+    background: grey;
+
     
 } 
 
