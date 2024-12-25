@@ -29,6 +29,7 @@ div.nav {
     margin: 10px auto 20px auto;
     padding: 3px;
     background: grey;
+    z-index: 3;
 
 }
 div.image {
