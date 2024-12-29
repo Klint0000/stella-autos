@@ -5,7 +5,7 @@
 body {
     width: 100vw;
     height: 100%;
-    background-image: linear-gradient(to bottom,  rgb(175, 190, 175), white);
+    background-image: linear-gradient(to bottom, black, white);
     background-repeat: no-repeat;
     overflow-x: hidden;
     font-family: "Encode Sans Semi Condensed", sans-serif;
@@ -21,16 +21,13 @@ div.container {
 div.nav {
     width: 80%;
     height: 40px;
-    position: fixed;
+    background: linear-gradient(to bottom, rgb(15, 29, 15),  rgb(175, 190, 175));
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
-    opacity: 1;
-    margin: 10px auto 20px auto;
+    margin: 10px auto;
     padding: 3px;
-    background: grey;
-    z-index: 3;
-
 }
 div.image {
     margin: 10px 5px 20px 5px;
@@ -51,7 +48,6 @@ ul.nav-list {
 li {
     float: left;
     margin: 3%;
-
     
 } 
 
@@ -280,17 +276,16 @@ h1.contact  {
     div.container {
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10% 80% 10%;
+        position: relative;
     }
     div.nav {
         display: none;
     }
     div.image {
-        grid-row: 2/3;
-        grid-column: 3/5;
-        margin: 10px;
+        position: absolute;
+        bottom: -50%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     div#about {
         grid-row: 2/3;
@@ -309,6 +304,7 @@ h1.contact  {
     p.welcome  {
         margin: 10px;
         font-size: 16px;
+        color: #fff;
     }
     h2 {
         font-size: 25px;
@@ -316,7 +312,7 @@ h1.contact  {
         font-weight: bold;
     }
     .who {
-        background: linear-gradient(to bottom, rgb(34, 33, 33), rgb(43, 42, 42));
+        background: linear-gradient(to bottom, rgb(223, 217, 217), rgb(131, 128, 128));
         background-clip: text;
         color: transparent;
     }
@@ -329,9 +325,9 @@ h1.contact  {
         margin: -10px 0;
     }
     div#contact {
-        display: block;
-        font-size: 20px;
-        transform: translate(100%, -100px);
+        position: absolute;
+        left: 0;
+        bottom: -50%;
     }
     a {
         color: rgb(15, 15, 34);
@@ -345,12 +341,31 @@ h1.contact  {
     }
 }
 @media (min-width: 900px) {
-    .container {
-        margin-top: 0;
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    div.above {
+        margin-top: 0 !important;
+    }
+    .image img{
+        width: 500px;
+        height: 500px;
+        position: relative;
     }
     div#contact {
-        display: block;
-        font-size: 20px;
-        transform: translate(80%);
+        position: absolute;
+        bottom: -50%;
+        right: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media (min-width: 1000px) {
+    .image img{
+        width: 700px;
+        height: 700px;
+        position: relative;
     }
 }
